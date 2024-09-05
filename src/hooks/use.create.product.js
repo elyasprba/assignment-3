@@ -22,13 +22,11 @@ export function useSubmitHandler(input, setInput, onSuccess) {
     }
 
     try {
-      const url = BASE_URL;
-
       const body = JSON.stringify([
         { products: input.product, price: parseInt(input.price) },
       ]);
 
-      const result = await fetch(url, {
+      const result = await fetch(BASE_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

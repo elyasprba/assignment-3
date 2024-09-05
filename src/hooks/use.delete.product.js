@@ -1,12 +1,11 @@
+import { BASE_URL } from '@/constants/bash.url';
 import { useCallback } from 'react';
 
 export function useDeleteProduct(onSuccess) {
   const handleDeleteProduct = useCallback(
     async (id) => {
-      const url = 'https://v1.appbackend.io/v1/rows/3Ygjc2M8REfR';
-
       try {
-        const response = await fetch(url, {
+        const response = await fetch(BASE_URL, {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',
