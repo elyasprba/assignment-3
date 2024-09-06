@@ -52,7 +52,7 @@ export default function Home() {
           Daftar menu resto pagi sampe malam
         </h1>
       </div>
-      <section className="border sm:p-8 p-5 md:w-1/3 w-full">
+      <section className="border sm:p-8 p-5 md:w-1/3 w-full rounded-md">
         <form onSubmit={handleSubmit}>
           <Form
             label="Nama Produk"
